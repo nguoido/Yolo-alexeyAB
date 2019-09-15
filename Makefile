@@ -1,7 +1,7 @@
-GPU=0
-CUDNN=0
+GPU=1
+CUDNN=1
 CUDNN_HALF=0
-OPENCV=0
+OPENCV=1
 AVX=0
 OPENMP=0
 LIBSO=0
@@ -19,6 +19,9 @@ ARCH= -gencode arch=compute_30,code=sm_30 \
 	  -gencode arch=compute_61,code=[sm_61,compute_61]
 
 OS := $(shell uname)
+
+# Jetson Nano
+ARCH= -gencode arch=compute_53,code=[sm_53,compute_53]
 
 # Tesla V100
 # ARCH= -gencode arch=compute_70,code=[sm_70,compute_70]
