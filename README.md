@@ -19,3 +19,11 @@
 ```
 ./darknet detector demo cfg/coco.data yolo_coco/yolov3-tiny.cfg yolo_coco/yolov3-tiny.weights <video file>
 ```
+
+# Traning #
+
+* Dùng VNC để trung cập vào thực hiên
+* git clone -b laptop_yolo <repo>
+* Gõ make để build
+* Bắt đầu traning 
+```./darknet detector train build/yolov3_custom/darknet.data build/yolov3_custom/yolov3-tiny-person.cfg yolov3-tiny.conv.15 > train.log```
