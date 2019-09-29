@@ -1,0 +1,6 @@
+classes = 1
+train  = build/data/train.txt
+valid  = build/data/test.txt
+names = build/data/classes.names
+backup = backup/
+
