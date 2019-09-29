@@ -1,6 +1,6 @@
 classes = 1
-train  = build/data/train.txt
-valid  = build/data/test.txt
-names = build/data/classes.names
+train  = build/yolov3_custom/train.txt
+valid  = build/yolov3_custom/test.txt
+names = build/yolov3_custom/classes.names
 backup = backup/
 
